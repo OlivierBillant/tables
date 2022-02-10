@@ -10,29 +10,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Les tableaux</title>
-    <!-- Les tableaux sont crées par la balise <table>
-        On définit une première zone : <thead>
-        Puis on passe aux lignes <tr> et colonnes <th> définissant les noms de lignes et colonnes
-        On définit une seconde zone : <tbody>
-        On repasse aux lignes : <tr> puis la cellule <td>
-     -->
-
+    <title>Tableau bootstrap</title>
 </head>
 
 <body>
-    <!-- table>thead>tr>th*2 -->
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-    </table>
+    <header class="container-fluid bg-dark text-white py-5 mb-4">
+        <i class="fa-solid fa-user-group"></i>
+        Liste des personnes
+    </header>
 
-
-
+    <div class="container text-center">
+        <div class="col-6 mx-auto">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Prénom</th>
+                        <th>Nom</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BOB</td>
+                        <td>EPONDE</td>
+                        <td>
+                            <button type="button" class="btn btn-primary"><i
+                                    class="fa-solid fa-pen-to-square"></i></button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bruce</td>
+                        <td>Willis</td>
+                        <td>
+                            <button type="button" class="btn btn-primary"><i
+                                    class="fa-solid fa-pen-to-square"></i></button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>Tom</td>
+                        <td>Cruise</td>
+                        <td>
+                            <button type="button" class="btn btn-primary"><i
+                                    class="fa-solid fa-pen-to-square"></i></button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="container-fluid bg-dark text-white pt-4 pb-1 text-center mt-4">
+        Copyright © your website 2022
+    </footer>
 </body>
 
 </html>
